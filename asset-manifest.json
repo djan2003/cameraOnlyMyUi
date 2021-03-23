@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cameraOnlyMyUi/static/css/main.626adc0c.chunk.css",
+    "main.js": "/cameraOnlyMyUi/static/js/main.7d633e3a.chunk.js",
+    "main.js.map": "/cameraOnlyMyUi/static/js/main.7d633e3a.chunk.js.map",
+    "runtime-main.js": "/cameraOnlyMyUi/static/js/runtime-main.312c1493.js",
+    "runtime-main.js.map": "/cameraOnlyMyUi/static/js/runtime-main.312c1493.js.map",
+    "static/js/2.9c94dde6.chunk.js": "/cameraOnlyMyUi/static/js/2.9c94dde6.chunk.js",
+    "static/js/2.9c94dde6.chunk.js.map": "/cameraOnlyMyUi/static/js/2.9c94dde6.chunk.js.map",
+    "static/js/3.dbdf805d.chunk.js": "/cameraOnlyMyUi/static/js/3.dbdf805d.chunk.js",
+    "static/js/3.dbdf805d.chunk.js.map": "/cameraOnlyMyUi/static/js/3.dbdf805d.chunk.js.map",
+    "index.html": "/cameraOnlyMyUi/index.html",
+    "static/css/main.626adc0c.chunk.css.map": "/cameraOnlyMyUi/static/css/main.626adc0c.chunk.css.map",
+    "static/js/2.9c94dde6.chunk.js.LICENSE.txt": "/cameraOnlyMyUi/static/js/2.9c94dde6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cameraOnlyMyUi/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.312c1493.js",
+    "static/js/2.9c94dde6.chunk.js",
+    "static/css/main.626adc0c.chunk.css",
+    "static/js/main.7d633e3a.chunk.js"
+  ]
+}
