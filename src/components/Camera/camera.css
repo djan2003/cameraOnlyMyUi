@@ -1,0 +1,15 @@
+.App {
+  background: #c7cdcd;
+  min-height: 100vh;
+
+}
+.check{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.camera1{
+  margin: 10px;
+}

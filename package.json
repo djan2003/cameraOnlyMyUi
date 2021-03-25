@@ -2,16 +2,25 @@
   "name": "camera",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://djan2003.github.io/cameraOnlyMyUi",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/react-router-dom": "^5.1.7",
+    "formik": "^2.2.6",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +43,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "typescript": "^4.2.3"
   }
 }
