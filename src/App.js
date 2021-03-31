@@ -1,68 +1,22 @@
 import React, {useState} from "react";
 import './App.css';
-import IconButton from "@material-ui/core/IconButton";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Menu from "@material-ui/core/Menu";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import FormGroup from "@material-ui/core/FormGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Switch from "@material-ui/core/Switch";
 import {Login} from "./components/Login/Login";
-import Camera from "./components/Camera/Camera";
+import Camera from "./components/Camera/Cameras/Camera";
+import {BrowserRouter, HashRouter, Redirect, Route} from "react-router-dom";
 
-const App =()=>{
-    const [showAllCamera, setShowAllCamera] = useState(true)
-    const removeCamera =  ()=>{
-        setShowAllCamera(!showAllCamera)
-    }
-    return <div>
-                <AppBar position="static">
-                    <Toolbar>
-                        <IconButton edge="start" color="inherit" aria-label="menu">
-                            <Menu open={false}/>
-                        </IconButton>
-                        <Typography variant="h6">
-                            News
-                        </Typography>
-                        <Button color="inherit">Login</Button>
-                    </Toolbar>
-                </AppBar>
-                <div className={"check"}>
-                    <div className={"camera1"}>
-                        <iframe   src="https://www.youtube.com/embed/1EiC9bvVGnk"
-                                  title="YouTube video player" frameBorder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen></iframe>
+const App = () => {
+    return <div className={"app"}>
+        <HashRouter>
+            <Route exact path={"/"} render={() => <Camera/>}/>
+            <Route path={"/login"} render={() => <Login/>}/>
+            <Route path={'/404'} render={() => <h1>404: PAGE NOT FOUND</h1>}/>
+         {/*   <Redirect path={'*'} to={"404"}/>*/}
+        </HashRouter>
 
-                    </div>
-                    {showAllCamera&& <div className={"camera1"}>
-                        <iframe src="https://www.youtube.com/embed/jbqT0fTj088"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen></iframe>
-
-                    </div>}
-
-                </div>
-                <FormGroup>
-                    <FormControlLabel
-                        control={<Switch size="small"  onChange={removeCamera} />}
-                        label="remove/add second camera"
-                    />
-                    <FormControlLabel
-                        control={<Switch  onChange={removeCamera} />}
-                        label="remove/add second camera"
-                    />
-                </FormGroup>
-                <Button onClick={removeCamera} color="primary">remove/add second camera</Button>
-                <button onClick={removeCamera}>remove/add second camera</button>
-            </div>
-
+    </div>
 
 }
+
 
 export default App;
 

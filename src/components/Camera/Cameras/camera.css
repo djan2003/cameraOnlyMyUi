@@ -13,3 +13,13 @@
 .camera1{
   margin: 10px;
 }
+.link{
+  color: white;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}

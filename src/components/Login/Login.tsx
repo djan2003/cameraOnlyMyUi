@@ -1,8 +1,20 @@
 import React from 'react'
 import {Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, TextField, Button, Grid} from '@material-ui/core'
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import {NavLink} from "react-router-dom";
 
 export const Login = () => {
     return <Grid container justify="center">
+        <AppBar position="static">
+            <Toolbar>
+                <NavLink className={"link"} to={"/"}>
+                    <Button>
+                        <span className={"link"}>Go Back</span>
+                    </Button>
+                </NavLink>
+            </Toolbar>
+        </AppBar>
         <Grid item xs={4}>
             <FormControl>
                 <FormLabel>
